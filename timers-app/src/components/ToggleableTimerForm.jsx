@@ -8,7 +8,7 @@ export default class ToggleableTimerForm extends Component {
     }
 
     handleFormOpen = () => this.openForm();
-    
+
     handleFormClose = () => this.closeForm();
 
     handleSubmit = (timer) => {
@@ -25,13 +25,13 @@ export default class ToggleableTimerForm extends Component {
 
         if (isOpen) {
             return (
-                <TimerForm 
-                    onFormClose={this.handleFormClose} 
+                <TimerForm
+                    onFormClose={this.handleFormClose}
                     onFormSubmit={this.handleSubmit}
                 />
             );
         }
-        
+
         return (
             <div className="ui basic content center aligned segment">
                 <button className="ui basic button icon" onClick={this.handleFormOpen}>

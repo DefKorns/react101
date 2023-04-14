@@ -34,7 +34,7 @@ export default class TimersDashboard extends Component {
 
     createTimer = (timer) => {
         const t = newTimer(timer);
-        this.setState({ timers: [...this.state.timers, t]});
+        this.setState({ timers: [...this.state.timers, t] });
 
         api.createTimer(t);
     }
@@ -93,12 +93,12 @@ export default class TimersDashboard extends Component {
 
     render() {
         const { timers } = this.state;
-        
+
         return (
             <div className="ui column centered grid">
                 <div className="column">
-                    <EditableTimerList 
-                        timers={timers} 
+                    <EditableTimerList
+                        timers={timers}
                         onFormSubmit={this.handleUpdateFormSubmit}
                         onTrashClick={this.handleTrashClick}
                         onStartClick={this.handleStartClick}

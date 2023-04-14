@@ -7,9 +7,9 @@ export default class TimerForm extends Component {
         project: this.props.project || ''
     }
 
-    handleTitleChange = ({ target: { value }}) => this.setState({ title: value });
-    
-    handleProjectChange = ({ target: { value }}) => this.setState({ project: value });
+    handleTitleChange = ({ target: { value } }) => this.setState({ title: value });
+
+    handleProjectChange = ({ target: { value } }) => this.setState({ project: value });
 
     handleSubmit = (event) => {
         event.preventDefault();
