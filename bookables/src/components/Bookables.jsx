@@ -28,7 +28,7 @@ export function Bookables() {
     }
 
     function toogleDetails() {
-        setHasDetails(prev => !prev);
+        setHasDetails((prev) => !prev);
     }
 
     return (
@@ -64,7 +64,12 @@ export function Bookables() {
                     <>
                         <p>
                             <label htmlFor="details">show details</label>
-                            <input type="checkbox" id="details" checked={hasDetails} onChange={toogleDetails}></input>
+                            <input
+                                type="checkbox"
+                                id="details"
+                                checked={hasDetails}
+                                onChange={toogleDetails}
+                            ></input>
                         </p>
                         {hasDetails && (
                             <div>
